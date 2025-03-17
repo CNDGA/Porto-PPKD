@@ -35,8 +35,8 @@
         </a>
       </li>
       <li>
-        <a href="components-buttons.html">
-          <i class="bi bi-circle"></i><span>Buttons</span>
+        <a href="blog.php">
+          <i class="bi bi-circle"></i><span>Blog</span>
         </a>
       </li>
       <li>
