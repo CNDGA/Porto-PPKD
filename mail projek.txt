@@ -1,0 +1,20 @@
+//how pake php programing 
+//this projek where email kontrasss in php crud
+ 1. pertama kelolah akun google anda
+ 2. verifikasi 2 langkah kalo blum veriviaksi.
+ 3. jika sudah terverifikasi cari di pencarian aplikasi password/sandi aplikasi.
+ 4.buat aplikasi sandi aplikasi.
+ 5.lalu salin code yg muncul
+ 6.setelah dpt codenya masuk ke xampp
+ 7.cari pencarian sendmail.
+ 8.pilih sendmail.ini lalu open.
+ 9.nanti akan muncul notepad lalu cari sebuah auth_password&auth_username
+ 10. lalu isi auth username dengan email & passwordnya dengan code sandi aplikasi yg susdah di copy.
+ 11. File php.ini:
+	[mail function]
+	smp_server=smtp.gmail.com
+	smtp_port=587
+	sendmail_from = your-email@gmail.com
+	sendmail_path = "\"C:\xampp\sendmail\sendmail.exe\" -t
+     jika file tersebut beda maka samakan seperti file tersebut.
+12. savee..
