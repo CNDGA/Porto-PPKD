@@ -391,8 +391,7 @@ include "koneksi.php";
     				</div>
   				</div>
 				<?php  endforeach ?>	
-				
-
+			
 
 		
 
