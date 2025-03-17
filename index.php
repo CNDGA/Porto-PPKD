@@ -373,73 +373,23 @@ include "koneksi.php";
         </div>
     		<div class="row">
 
-				<?php 
-				foreach($projects as $index => $project) : 	?>
-						<?php if($index % 2 == 0){?>	
-							<div class="col-md-4">
-    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(<?php echo "assets/uploads/" . $project['foto'] ?>);">
-    					<div class="overlay"></div>
-	    				<div class="text text-center p-4">
+				<?php
+					$colClass=["col-md-4", "col-md-8"];
+					$index =0;		
+				?>
+
+				<?php foreach($projects as $index => $project) : 	?>
+					<?php $col=$colClass[$index % 2]; ?>
+
+							<div class="<?php echo $col?> mb-4 ">
+    						<div	div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(<?php echo "assets/uploads/" . $project['foto'] ?>);">
+    								<div class="overlay"></div>
+	    							<div class="text text-center p-4">
 	    					<h3><a href="#"><?php echo $project ['nama']?></a></h3>
 	    					<span><?php echo $project ['kategori']?></span>
 	    				</div>
     				</div>
   				</div>
-
-  				<div class="col-md-8">
-    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(assets/fe/images/project-5.jpg);">
-    					<div class="overlay"></div>
-	    				<div class="text text-center p-4">
-	    					<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-	    					<span>Web Design</span>
-	    				</div>
-    				</div>
-  				</div>
-							
-						<?php  }else{ ?>		
-							
-							<div class="col-md-8">
-    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(assets/fe/images/project-1.jpg);">
-    					<div class="overlay"></div>
-	    				<div class="text text-center p-4">
-	    					<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-	    					<span>Web Design</span>
-	    				</div>
-    				</div>
-
-    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(assets/fe/images/project-6.jpg);">
-    					<div class="overlay"></div>
-	    				<div class="text text-center p-4">
-	    					<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-	    					<span>Web Design</span>
-	    				</div>
-    				</div>
-    			</div>
-
-    			<div class="col-md-4">
-    				<div class="row">
-    					<div class="col-md-12">
-		    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(assets/fe/images/project-2.jpg);">
-		    					<div class="overlay"></div>
-			    				<div class="text text-center p-4">
-			    					<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-			    					<span>Web Design</span>
-			    				</div>
-		    				</div>
-	    				</div>
-	    				<div class="col-md-12">
-		    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(assets/fe/images/project-3.jpg);">
-		    					<div class="overlay"></div>
-			    				<div class="text text-center p-4">
-			    					<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-			    					<span>Web Design</span>
-			    				</div>
-		    				</div>
-	    				</div>
-    				</div>
-    			</div>
-
-						<?php }?>
 				<?php  endforeach ?>	
 				
 
